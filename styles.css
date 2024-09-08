@@ -1,0 +1,339 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    background-color: #16161a;
+    overflow-y: auto; /* Memungkinkan scroll secara vertikal */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+#main-nav {
+    width: 100%; /* Mengatur lebar navbar agar sesuai dengan lebar halaman */
+    background-color: #16161a; /* Warna latar belakang navbar */
+    position: sticky; /* Memastikan navbar tetap di posisi atas saat scroll */
+    top: 0; /* Menempel di atas halaman */
+    z-index: 1000; /* Memastikan navbar berada di atas elemen lainnya */
+    border-bottom: 4px solid #7f5af0;
+}
+
+#main-nav .navbar {
+    background-color:#16161a;
+    width: 100%;
+    padding: 10px 0; /* Menambahkan padding untuk spasi */
+}
+
+/* Navbar List */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 50px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    font-size: 20px;
+    color: #fffffe;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+ul li a:hover {
+    color:#7f5af0;
+}
+
+/* Curved Section */
+.curved {
+    background: #7f5af0;
+    text-align: center;
+    padding: 0;
+    position: relative;    
+    margin-top: -25rem;
+}
+
+.curved svg {
+    display: block;
+}
+
+.curved-upper {
+    background: transparent;
+}
+
+.curved-upper svg {
+    display: block;
+}
+
+.curved .pre-title {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: #fffffe; /* Teks tetap terang */
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Efek bayangan lebih halus */
+    margin: 0;
+    padding-top: 20px; /* Atur jarak antara teks dan bagian atas */
+}
+
+.curved .name{
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+/* About Section */
+#about {
+    display: grid;
+    height: 100px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: white;
+    padding-left: 5rem;
+    margin-top: -2rem;
+    line-height: 2rem;
+}
+
+#about .about h1 {
+    text-decoration: underline;
+}
+
+#about .about h2 {
+    text-align: left;
+}
+
+/* Main Card */
+.main-card {
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 320px;
+    perspective: 1000px; /* Perspektif untuk flip effect */
+    margin: 0 auto; /* Center the card */
+    box-shadow: 0 0 10px 5px #7f5af0;
+}
+
+.main-card img {
+    border-radius: 5%;
+    width: 250px;
+    height: 320px;
+}
+
+.card {
+    width: 100%; /* Mengatur ukuran penuh dari .main-card */
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.flip h1 {
+    text-decoration: none;
+    color: #7f5af0;
+    text-align: center;
+}
+
+/* Flip Card */
+.front-card, .back-card {
+    border-radius: 5%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.back-card {
+    background: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.back-card h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.back-card h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 20px;
+    font-style: oblique;
+    margin-left: 5px;
+}
+
+/* Tools Section */
+#tools h1 {
+    color: white;
+    margin-top: 25rem;
+    text-align: center;
+}
+
+/* Icon Section */
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.icon img {
+    filter: grayscale(100%);
+}
+
+.icon img:hover {
+    filter: grayscale(0%);
+}
+
+
+#project {
+    margin-top: -20rem;
+}
+
+#project h1 {
+    font-size: 25px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Jarak antara card */
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column; /* Vertikal */
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* Perspektif untuk flip effect */
+    box-shadow: 0 0 10px 5px #7f5af0;
+    position: relative; /* Untuk posisi absolute pada .using */
+}
+
+.project img {
+    border-radius: 5%;
+    width: 300px;
+    height: 300px;
+}
+
+.project h1 {
+    margin-top: 0;
+}
+
+.using {
+    background-color: #7f5af0;
+    width: 305px;
+    height: 180px;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.using .text {
+    margin-bottom: 10px; /* Spasi antara teks dan ikon */
+}
+
+.using .icons {
+    display: flex; /* Tampilkan ikon secara horizontal */
+    align-items: center; /* Vertikal center untuk ikon */
+    gap: 10px; /* Jarak antara ikon */
+    margin-bottom: 10px; /* Spasi antara ikon dan tombol */
+}
+
+.using img {
+    width: 40px;
+    height: 40px;
+}
+
+.desain .more {
+    position: relative;
+    margin-top: 10px; /* Jarak antara ikon dan tombol */
+    --glow-color: #2cb67d;
+    --glow-spread-color: #2cb67d;
+    --enchanced-glow-color: #14ff9d;
+    --btn-color: #010202;
+    border: 0.25rem solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    transition: all 0.3s;
+}
+
+.desain .more::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 100%; /* Posisikan tepat di bawah tombol */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: 0.7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.desain .more:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.desain .more:active {
+    box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+
+#contact{
+    margin-top: -15rem;
+}
+
+#contact h1{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.icon-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
