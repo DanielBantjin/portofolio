@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/sections/projects.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/sections/about.css">
+    <link rel="stylesheet" href="assets/css/sections/contact.css">
+    <link rel="stylesheet" href="assets/css/layout/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -33,7 +35,7 @@
                 <ul class="navbar-menu">
                     <li class="navbar-item"><a class="navbar-link" href="#home">Home</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#portofolio">Portofolio</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#projects">Portofolio</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
                 </ul>
 
@@ -44,19 +46,19 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
             <div class="hero-wrapper">
                 <div class="hero-image">
                     <img src="assets/images/profile/hero.jpeg" alt="Hero Image">
                 </div>
                 <div class="hero-content">
-                    <h1 class="hero-title">Hello, Saya Daniel Septian Feri Bancin</h1>
+                    <h1 class="hero-title"><span class="typewriter" data-text="Hello, Saya Daniel Septian Feri Bancin"></span></h1>
                     <p class="hero-description">Saya adalah seorang web developer yang berfokus pada pengembangan
                         aplikasi web yang responsif dan user-friendly. Saya memiliki pengalaman dalam berbagai teknologi
                         web dan selalu berusaha untuk meningkatkan keterampilan saya.</p>
                     <div class="hero-buttons">
-                        <a href="#portofolio" class="hero-button">Lihat Portofolio</a>
+                        <a href="#projects" class="hero-button">Lihat Portofolio</a>
                         <a href="#contact" class="hero-button hero-button-secondary">Hubungi Saya</a>
                     </div>
                 </div>
@@ -64,7 +66,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about-wrapper">
                 <div class="about-header">
@@ -115,7 +117,7 @@
         </div>
     </section>
 
-    <section class="skill">
+    <section class="skill" id="skills">
         <div class="container">
             <div class="skill-wrapper">
                 <div class="skill-header">
@@ -348,6 +350,44 @@
 
                     </a>
 
+                    <!-- Project 5 -->
+                    <a href="projects/chrona.html" class="project-card">
+
+                        <div class="project-image">
+                            <img src="assets/images/projects/chrona/cover.png"
+                                alt="Chrona Todo List Desktop App">
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Desktop Application
+                            </span>
+
+                            <h3 class="project-title">
+                                Chrona (Todo List App Desktop)
+                            </h3>
+
+                            <p class="project-description">
+                                Aplikasi desktop todo list sederhana untuk membantu pengguna mengatur tugas harian,
+                                menjaga fokus, dan memonitor progres aktivitas secara lebih terarah.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Desktop App</span>
+                                <span>SQLite</span>
+                                <span>Tkinter</span>
+                            </div>
+
+                            <span class="project-link">
+                                Lihat Detail →
+                            </span>
+
+                        </div>
+
+                    </a>
+
                 </div>
 
             </div>
@@ -355,6 +395,37 @@
         </div>
 
     </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <p class="section-label">Contact</p>
+                    <h2>Hubungi Saya</h2>
+                    <p>Jika Anda tertarik dengan karya saya atau ingin bekerja sama, silakan hubungi saya melalui media berikut.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:danielseptianveribancin@gmail.com" class="contact-link">danielseptianveribancin@gmail.com</a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2026 Daniel Septian Feri Bancin. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/main.js"></script>
 

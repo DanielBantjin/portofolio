@@ -1,0 +1,42 @@
+.contact {
+    padding: 4rem 0 3rem;
+}
+
+.contact-wrapper {
+    background: linear-gradient(135deg, rgba(91, 91, 214, 0.18), rgba(30, 41, 59, 0.95));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-content h2 {
+    margin-bottom: 0.7rem;
+}
+
+.contact-links {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.78rem 1rem;
+    border-radius: 999px;
+    background: rgba(248, 250, 252, 0.08);
+    color: var(--heading);
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-link:hover {
+    transform: translateY(-2px);
+    background: rgba(91, 91, 214, 0.2);
+}

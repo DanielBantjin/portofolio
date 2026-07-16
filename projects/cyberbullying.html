@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberbullying Detection Platform | Daniel Septian</title>
+
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/detail/project-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="navbar-logo">Daniel Septian Feri Bancin</a>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a class="navbar-link" href="../index.html#home">Home</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="../index.html#about">About</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="../index.html#projects">Projects</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="../index.html#contact">Contact</a></li>
+                </ul>
+                <button class="navbar-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail-page">
+        <section class="project-hero">
+            <div class="container project-hero-grid">
+                <div class="project-hero-content">
+                    <p class="project-eyebrow">Machine Learning • Web Application</p>
+                    <h1>Cyberbullying Detection Platform</h1>
+                    <p class="project-description">
+                        Platform berbasis web yang menggabungkan model IndoBERT melalui FastAPI untuk membantu mendeteksi
+                        komentar cyberbullying pada konten YouTube secara lebih cepat dan terstruktur.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="../index.html#projects" class="button button-primary">Kembali ke Portfolio</a>
+                        <a href="#highlights" class="button button-secondary">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="project-hero-media">
+                    <img src="../assets/images/projects/cyberbullying/cover.png" alt="Cyberbullying Detection Platform">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-overview" id="highlights">
+            <div class="container project-grid">
+                <article class="project-card detail-card">
+                    <h2>Ringkasan Project</h2>
+                    <p>
+                        Proyek ini dibuat untuk menjembatani kebutuhan deteksi cyberbullying secara otomatis pada komentar
+                        YouTube yang banyak dipakai di era digital. Pengguna dapat menginput teks komentar lalu sistem akan
+                        memberikan hasil prediksi berdasarkan model yang sudah dilatih.
+                    </p>
+                </article>
+                <article class="project-card detail-card">
+                    <h2>Peran Saya</h2>
+                    <ul class="detail-list">
+                        <li>Merancang alur aplikasi dan pengalaman pengguna</li>
+                        <li>Membangun API layanan prediksi dengan FastAPI</li>
+                        <li>Menghubungkan frontend dengan model machine learning</li>
+                        <li>Menyiapkan struktur data dan dokumentasi proyek</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-highlights">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Apa yang dibangun</p>
+                    <h2>Fitur utama yang dihadirkan</h2>
+                </div>
+                <div class="highlight-grid">
+                    <article class="highlight-card">
+                        <i data-lucide="scan-search" class="highlight-icon"></i>
+                        <h3>Deteksi komentar</h3>
+                        <p>Pengguna dapat memasukkan teks komentar dan melihat hasil prediksi secara langsung.</p>
+                    </article>
+                    <article class="highlight-card">
+                        <i data-lucide="brain-circuit" class="highlight-icon"></i>
+                        <h3>Model IndoBERT</h3>
+                        <p>Model NLP dipakai untuk memahami bahasa Indonesia dengan tingkat akurasi yang lebih baik.</p>
+                    </article>
+                    <article class="highlight-card">
+                        <i data-lucide="panel-top" class="highlight-icon"></i>
+                        <h3>Antarmuka yang sederhana</h3>
+                        <p>Desain web dibuat ringkas agar proses deteksi terasa cepat, jelas, dan mudah dipahami.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-process">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Alur kerja</p>
+                    <h2>Bagaimana proyek ini berjalan</h2>
+                </div>
+                <div class="process-grid">
+                    <article class="process-card">
+                        <span>01</span>
+                        <h3>Pengumpulan data</h3>
+                        <p>Data komentar dikumpulkan dan dipersiapkan untuk melatih model.</p>
+                    </article>
+                    <article class="process-card">
+                        <span>02</span>
+                        <h3>Pelatihan model</h3>
+                        <p>Model IndoBERT dilatih untuk mengenali pola cyberbullying dalam bahasa Indonesia.</p>
+                    </article>
+                    <article class="process-card">
+                        <span>03</span>
+                        <h3>Integrasi sistem</h3>
+                        <p>Frontend dan backend dipadukan melalui API FastAPI agar prediksi bisa diakses dari web.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Gallery</p>
+                    <h2>Tampilan project</h2>
+                </div>
+                <div class="image-carousel" data-carousel-images="../assets/images/projects/cyberbullying/1.png,../assets/images/projects/cyberbullying/2.png,../assets/images/projects/cyberbullying/3.png,../assets/images/projects/cyberbullying/Screenshot 2026-07-13 234437.png"></div>
+            </div>
+        </section>
+
+        <section class="project-tech">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Teknologi</p>
+                    <h2>Stack yang digunakan</h2>
+                </div>
+                <div class="tech-list">
+                    <span>Laravel</span>
+                    <span>FastAPI</span>
+                    <span>Python</span>
+                    <span>IndoBERT</span>
+                    <span>MySQL</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-cta">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Ingin melihat project lain?</h2>
+                    <p>Jelajahi proyek-proyek lain yang sudah saya bangun untuk pengalaman yang lebih lengkap.</p>
+                    <a href="../index.html#projects" class="button button-primary">Lihat Semua Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Daniel Septian Feri Bancin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/project-detail.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
