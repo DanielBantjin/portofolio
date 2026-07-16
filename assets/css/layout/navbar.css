@@ -24,6 +24,15 @@ ul {
     font-family:var(--font-heading);
     font-weight:700;
     color:var(--heading);
+    white-space:nowrap;
+}
+
+.navbar-logo-full {
+    display:inline;
+}
+
+.navbar-logo-short {
+    display:none;
 }
 
 .navbar-menu{
@@ -51,4 +60,18 @@ ul {
     background:none;
     border:none;
     cursor:pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        font-size: 0.95rem;
+    }
+
+    .navbar-logo-full {
+        display: none;
+    }
+
+    .navbar-logo-short {
+        display: inline;
+    }
 }
