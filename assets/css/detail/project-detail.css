@@ -291,14 +291,60 @@
 
 @media (max-width: 640px) {
     .project-detail-page {
-        padding-top: 5.5rem;
+        padding-top: 5.2rem;
     }
 
     .project-hero {
-        padding-top: 2rem;
+        padding: 1.5rem 0 1rem;
+    }
+
+    .project-hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .project-hero .project-description {
+        font-size: 1rem;
     }
 
     .hero-actions {
         flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .detail-card,
+    .highlight-card,
+    .process-card,
+    .cta-card {
+        padding: 1.2rem;
+    }
+
+    .carousel-slide img {
+        height: 240px;
+    }
+
+    .carousel-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+    }
+
+    .carousel-counter {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tech-list {
+        gap: 0.6rem;
+    }
+
+    .tech-list span {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
     }
 }

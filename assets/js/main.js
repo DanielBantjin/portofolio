@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const revealItems = document.querySelectorAll('.reveal');
+    const toggleButton = document.querySelector('.navbar-toggle');
+    const navMenu = document.querySelector('.navbar-menu');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -14,4 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     revealItems.forEach((item) => observer.observe(item));
+
+    if (toggleButton && navMenu) {
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('is-open');
+            toggleButton.setAttribute('aria-expanded', navMenu.classList.contains('is-open'));
+        });
+
+        document.querySelectorAll('.navbar-link').forEach((link) => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('is-open');
+                toggleButton.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 });

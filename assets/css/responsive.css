@@ -1,0 +1,153 @@
+@media (max-width: 900px) {
+    .hero {
+        padding-block: 4rem;
+    }
+
+    .hero-wrapper {
+        gap: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-grid,
+    .highlight-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-wrapper {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        padding: 0.5rem 0;
+    }
+
+    .navbar-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 999px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        color: var(--heading);
+    }
+
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 0.6rem);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        padding: 1rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        box-shadow: 0 15px 40px rgba(2, 8, 23, 0.14);
+    }
+
+    .navbar-menu.is-open {
+        display: flex;
+    }
+
+    .navbar-item {
+        width: 100%;
+    }
+
+    .navbar-link {
+        display: block;
+        width: 100%;
+        padding: 0.35rem 0;
+    }
+
+    .hero {
+        padding-top: 6rem;
+    }
+
+    .hero-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-title {
+        min-height: 4rem;
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .projects-list {
+        gap: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .project-card {
+        flex: 0 0 86vw;
+        max-width: 100%;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding-top: 5.5rem;
+    }
+
+    .hero-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-title {
+        min-height: 5rem;
+    }
+
+    .project-card {
+        flex-basis: 92vw;
+    }
+
+    .project-content {
+        padding: 1.2rem;
+    }
+}
