@@ -18,16 +18,27 @@
     margin-bottom: 0.7rem;
 }
 
+.contact-content {
+    flex: 1 1 18rem;
+    min-width: 0;
+}
+
 .contact-links {
     display: flex;
+    flex: 1 1 26rem;
+    justify-content: flex-end;
     gap: 0.9rem;
     flex-wrap: wrap;
+    min-width: 0;
 }
 
 .contact-link {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 0.6rem;
+    min-width: 0;
+    max-width: 100%;
     padding: 0.78rem 1rem;
     border-radius: 999px;
     background: rgba(248, 250, 252, 0.08);
@@ -36,7 +47,40 @@
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
+.contact-link svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex: 0 0 auto;
+    color: #a5b4fc;
+}
+
+.contact-link-email {
+    flex: 0 1 auto;
+}
+
+.contact-link-email span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
 .contact-link:hover {
     transform: translateY(-2px);
     background: rgba(91, 91, 214, 0.2);
+}
+
+@media (max-width: 768px) {
+    .contact-content,
+    .contact-links {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .contact-links {
+        justify-content: stretch;
+    }
+
+    .contact-link {
+        width: 100%;
+        border-radius: var(--radius-md);
+    }
 }

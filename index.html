@@ -33,17 +33,24 @@
             <nav class="navbar">
                 <a href="index.html" class="navbar-logo">
                     <span class="navbar-logo-full">Daniel Septian Feri Bancin</span>
-                    <span class="navbar-logo-short">DB</span>
                 </a>
-                <ul class="navbar-menu">
+                <ul class="navbar-menu" id="primary-navigation">
                     <li class="navbar-item"><a class="navbar-link" href="#home">Home</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#projects">Portofolio</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+                    <li class="navbar-item navbar-item-download">
+                        <a class="navbar-link navbar-link-download" href="CV_Daniel_Bancin_Universal.pdf" download>
+                            <i data-lucide="download" aria-hidden="true"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item navbar-item-cta"><a class="navbar-link" href="#contact">Contact</a></li>
                 </ul>
 
-                <button class="navbar-toggle">
-                    ☰
+                <button class="navbar-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </nav>
         </div>
@@ -53,7 +60,7 @@
         <div class="container">
             <div class="hero-wrapper">
                 <div class="hero-image">
-                    <img src="assets/images/profile/hero.jpeg" alt="Hero Image">
+                    <img src="assets/images/profile/pas_foto_3x4.jpg" alt="Foto Daniel Bancin">
                 </div>
                 <div class="hero-content">
                     <h1 class="hero-title"><span class="typewriter" data-text="Hello, Saya Daniel Septian Feri Bancin"></span></h1>
@@ -62,7 +69,6 @@
                         web dan selalu berusaha untuk meningkatkan keterampilan saya.</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="hero-button">Lihat Portofolio</a>
-                        <a href="#contact" class="hero-button hero-button-secondary">Hubungi Saya</a>
                     </div>
                 </div>
             </div>
@@ -198,8 +204,20 @@
                     </p>
                 </div>
 
+                <div class="projects-carousel-controls" aria-label="Navigasi project">
+                    <button class="projects-arrow" type="button" data-project-scroll="-1"
+                        aria-label="Lihat project sebelumnya" aria-controls="projects-list">
+                        <i data-lucide="arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="projects-arrow" type="button" data-project-scroll="1"
+                        aria-label="Lihat project berikutnya" aria-controls="projects-list">
+                        <i data-lucide="arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+
                 <!-- List Project -->
-                <div class="projects-list">
+                <div class="projects-list" id="projects-list" tabindex="0"
+                    aria-label="Daftar project yang dapat digeser">
 
                     <!-- Project 1 -->
                     <a href="projects/employee-overtime.html" class="project-card">
@@ -408,9 +426,19 @@
                     <p>Jika Anda tertarik dengan karya saya atau ingin bekerja sama, silakan hubungi saya melalui media berikut.</p>
                 </div>
                 <div class="contact-links">
-                    <a href="mailto:danielseptianveribancin@gmail.com" class="contact-link">danielseptianveribancin@gmail.com</a>
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=danielseptianveribancin@gmail.com"
+                        target="_blank" rel="noopener noreferrer" class="contact-link contact-link-email">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                        <span>danielseptianveribancin@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i data-lucide="code-xml" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i data-lucide="briefcase-business" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         </div>
